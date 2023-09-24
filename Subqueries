@@ -24,7 +24,7 @@ ________________________________________________________________________________
 
 And here I wrote a subquery to find how many of the top 5 customers are based within each of the top 10 countries.
 
-``` SELECT D.country AS country,
+SELECT D.country AS country,
     COUNT (DISTINCT A.customer_id) AS all_customer_count,
     COUNT (DISTINCT top_five_customers.customer_id) AS top_customer_count
 FROM customer A
@@ -51,4 +51,4 @@ ORDER BY Total_amount_paid DESC
 LIMIT 5) AS top_five_customers on D.country = top_five_customers.country
 GROUP BY D.country
 ORDER BY top_customer_count DESC
-LIMIT 10;```
+LIMIT 10;
