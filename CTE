@@ -1,6 +1,6 @@
-Here, I performed some CTEs to find out the average payment by the top 5 customers.
+Here, I used a CTE to find out the average payment by the top 5 customers.
 
-```WITH customersCTE (customer_id,
+WITH customersCTE (customer_id,
         First_name,
         Last_name,
         Country,
@@ -29,12 +29,13 @@ GROUP BY customersCTE.customer_id, customersCTE.country, customerCTE.city
 ORDER BY total_amount_paid DESC
 LIMIT 5)
 SELECT AVG(top_fiveCTE.total_amount_paid) AS average_payment
-FROM top_fiveCTE;```
+FROM top_fiveCTE;
 
+**_______________________________________________________________________________________________________________________________________________________**
 
 And here I used a CTE to find the amount of top 5 customers living in the top 10 countries.
 
-```WITH customersCTE (customer_id,
+WITH customersCTE (customer_id,
         First_name,
         Last_name,
         Country,
@@ -68,4 +69,4 @@ SELECT customersCTE.country,
 FROM customersCTE
 LEFT JOIN top_fiveCTE ON top_fiveCTE.country = customersCTE.country
 GROUP BY customersCTE.country
-ORDER BY top_five_count DESC;```
+ORDER BY top_five_count DESC;
