@@ -16,9 +16,7 @@ WHERE country IN ("India", "China", "United States", "Japan", "Mexico", "Brazil"
                   "Russian Federation", "Philippines", "Turkey", "Indonesia")
 AND city IN ("Aurora", "Acua", "Citrus Heights", "Iwaki", "Ambattur", "Shanwei",
              "So Leopoldo", "Teboksary", "Tianjin", "Cianjur")
-GROUP BY A.customer_id, 
-         C.city, 
-         D.country
+GROUP BY A.customer_id, C.city, D.country
 ORDER BY Total_amount_paid DESC
 LIMIT 5) AS total_amount_paid;```
 ______________________________________________________________________________________________________________________________
@@ -48,9 +46,7 @@ WHERE country IN ("India", "China", "United States", "Japan", "Mexico", "Brazil"
                   "Russian Federation", "Philippines", "Turkey", "Indonesia")
 AND city IN ("Aurora", "Acua", "Citrus Heights", "Iwaki", "Ambattur", "Shanwei",
              "So Leopoldo", "Teboksary", "Tianjin", "Cianjur")
-GROUP BY A.customer_id, 
-         C.city, 
-         D.country
+GROUP BY A.customer_id, C.city, D.country
 ORDER BY Total_amount_paid DESC
 LIMIT 5) AS top_five_customers on D.country = top_five_customers.country
 GROUP BY D.country
