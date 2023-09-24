@@ -11,10 +11,10 @@ I used several queries and JOINs to solve the tasks given to me and even compare
 dvdrental.tar provided by CareerFoundry
 
 ### Tools
-PostgreSQL
-Tableau
+- PostgreSQL
+- Tableau
 
 ### Link to Tableau
-<a href="https://public.tableau.com/shared/DQ5NBGZH2?:display_count=n&:origin=viz_share_link">World map</a>
-<a href="https://public.tableau.com/views/RB-top-10-countries/Sheet1?:language=de-DE&:display_count=n&:origin=viz_share_link">Top 10 countries bar chart</a>
-<a href="https://public.tableau.com/views/RB-Top10-cities-bubblechart/Sheet1?:language=de-DE&:display_count=n&:origin=viz_share_link">Top 10 cities bubble chart</a>
+- <a href="https://public.tableau.com/shared/DQ5NBGZH2?:display_count=n&:origin=viz_share_link">World map</a>
+- <a href="https://public.tableau.com/views/RB-top-10-countries/Sheet1?:language=de-DE&:display_count=n&:origin=viz_share_link">Top 10 countries bar chart</a>
+- <a href="https://public.tableau.com/views/RB-Top10-cities-bubblechart/Sheet1?:language=de-DE&:display_count=n&:origin=viz_share_link">Top 10 cities bubble chart</a>
