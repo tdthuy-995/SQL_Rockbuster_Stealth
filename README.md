@@ -18,3 +18,6 @@ I used several queries and JOINs to solve the tasks given to me and explored the
 - <a href="https://public.tableau.com/shared/DQ5NBGZH2?:display_count=n&:origin=viz_share_link">World map</a>
 - <a href="https://public.tableau.com/views/RB-top-10-countries/Sheet1?:language=de-DE&:display_count=n&:origin=viz_share_link">Top 10 countries bar chart</a>
 - <a href="https://public.tableau.com/views/RB-Top10-cities-bubblechart/Sheet1?:language=de-DE&:display_count=n&:origin=viz_share_link">Top 10 cities bubble chart</a>
+
+### Deliverable
+[Presentation]( https://github.com/tdthuy-995/SQL_Rockbuster_Stealth/blob/main/TASK%203.10%20ROCKBUSTER%20presentation.pdf)
