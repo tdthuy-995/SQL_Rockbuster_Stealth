@@ -11,7 +11,7 @@ I used several queries and JOINs to solve the tasks given to me and explored the
 *dvdrental* provided by CareerFoundry
 
 ### Tools
-- PostgreSQL
+- pgAdmin 4 
 - Tableau
 
 ### Links to Tableau charts
