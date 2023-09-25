@@ -20,4 +20,5 @@ I used several queries and JOINs to solve the tasks given to me and explored the
 - <a href="https://public.tableau.com/views/RB-Top10-cities-bubblechart/Sheet1?:language=de-DE&:display_count=n&:origin=viz_share_link">Top 10 cities bubble chart</a>
 
 ### Deliverable
+[Data dictionary](https://github.com/tdthuy-995/SQL_Rockbuster_Stealth/blob/main/Data%20dictionary%203.10.pdf)
 [Presentation]( https://github.com/tdthuy-995/SQL_Rockbuster_Stealth/blob/main/TASK%203.10%20ROCKBUSTER%20presentation.pdf)
