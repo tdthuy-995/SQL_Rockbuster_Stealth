@@ -1,0 +1,65 @@
+In this file, I checked the film table for dirty data and summarized it afterwards.
+
+# checking for duplicates
+SELECT *,
+  COUNT(*)
+FROM film
+GROUP BY film_id,
+  title,
+  description,
+  release_year,
+  language_id,
+  rental_duration,
+  rental_rate,
+  length,
+  replacement_cost,
+  rating,
+  last_update,
+  special_features,
+  fulltext
+HAVING COUNT (*)>1;
+
+# checking for missing values
+SELECT COUNT(*)
+FROM film
+WHERE film_id IS NULL OR
+  title IS NULL OR
+  description IS NULL OR
+  release_year IS NULL OR
+  language_id IS NULL OR
+  rental_duration IS NULL OR
+  rental_rate IS NULL OR
+  length IS NULL OR
+  replacement_cost IS NULL OR
+  rating IS NULL OR
+  last_update IS NULL OR
+  special_features IS NULL OR
+  fulltext IS NULL;
+
+# summarizing data for numerical values
+SELECT MIN(release_year) AS oldest_release_year,
+  MAX(release_year) AS newest_release_year,
+  AVG(release_year) AS avg_release_year,
+  MIN(rental_duration) AS min_rental_duration,
+  MAX(rental_duration) AS max_rental_duration,
+  AVG(rental_duration) AS avg_rental_duration,
+  MIN(rental_rate) AS min_rental_rate,
+  MAX(rental_rate) AS max_rental_rate,
+  AVG(rental_rate) AS avg_rental_rate,  
+  MIN(length) AS min_length,
+  MAX(length) AS max_length,
+  AVG(length) AS avg_length,
+  MIN(replacement_cost) AS min_replacement_cost,
+  MAX(replacement_cost) AS max_lengthreplacement_cost,
+  AVG(replacement_cost) AS avg_replacement_cost,
+  COUNT(*) AS count_rows
+FROM film
+
+# pulling modal values for categorical values
+SELECT MODE () WITHIN GROUP (ORDER BY title) AS modal_title,
+  MODE () WITHIN GROUP (ORDER BY description) AS modal_description,
+  MODE () WITHIN GROUP (ORDER BY rating) AS modal_rating,
+  MODE () WITHIN GROUP (ORDER BY last_update) AS modal_last_update,
+  MODE () WITHIN GROUP (ORDER BY special_features) AS modal_special_feat,
+  MODE () WITHIN GROUP (ORDER BY fulltext) AS modal_fulltext
+FROM film
