@@ -1,0 +1,56 @@
+In the following lines, I used different queries to find the requested information with the provided criteria.
+
+# query to get the film_id, title and description of the movies which contain "Uptown" in their titile
+SELECT 	film_id,
+	title, 
+	description
+FROM film
+WHERE title LIKE '%Uptown%'
+
+# query to find the film_id, title, description, rental_rate and movie_length of movies with renting rates higher than 2.99 and movie length are more than 120 minutes
+SELECT 	film_id,
+	title, 
+	description,
+	rental_rate,
+	length AS movie_length
+FROM film
+WHERE rental_rate > 2.99
+AND length > 120
+
+# query to find the film_id, title, description and rental_duration of movies with a rental duration between 4 and 6 days
+SELECT	film_id,
+	title, 
+	description,
+	rental_duration
+FROM film
+WHERE rental_duration BETWEEN 4 and 6
+
+# query to find the film_id, title, description and replacement cost of movies whose replacement cost is less than 14.99
+SELECT 	film_id,
+	title, 
+	description,
+	replacement_cost AS film_replacement_cost
+FROM film
+WHERE replacement_cost <14.99
+
+# query to find the film_id, title, description and film rating of PG and G-rates movies
+SELECT 	film_id,
+	title, 
+	description,
+	rating AS film_rating
+FROM film
+WHERE rating IN ('PG', 'G')
+
+# query to find the maximum and minimum rental duration movies which are rated PG and G
+SELECT 	MAX(rental_duration) AS maximum_rental_duration,
+	MIN(rental_duration) AS minimum_rental_duration
+FROM film
+WHERE rating IN ('PG', 'G')
+
+# query to find number and the rating of movies rated PG and G grouped by rating
+SELECT 	rating AS film_rating,
+	COUNT (title) AS count_of_movies
+FROM film
+WHERE rating IN ('PG', 'G')
+GROUP BY rating 
+HAVING COUNT(title)> 0
