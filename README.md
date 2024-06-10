@@ -21,4 +21,4 @@ I used several queries and JOINs to solve the tasks given to me and explored the
 
 ### Deliverables
 + [Data dictionary](https://github.com/tdthuy-995/SQL_Rockbuster_Stealth/blob/main/Data%20dictionary%203.10.pdf)
-+ [Presentation]( https://github.com/tdthuy-995/SQL_Rockbuster_Stealth/blob/main/TASK%203.10%20ROCKBUSTER%20presentation.pdf)
++ [Presentation]( https://github.com/tdthuy-995/SQL_Rockbuster_Stealth/blob/main/ROCKBUSTER%20presentation.pdf)
